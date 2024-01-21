@@ -77,4 +77,22 @@ class User {
     }
 
   }
+
+  Future<User?> getClient({
+    required String mobile,
+  }) async {
+    var data = json.encode({
+      "mobile": mobile
+    });
+
+    var response = await dioManager.dio.post('client/getbymobile', data: data,);
+
+    if (response.statusCode == 200) {
+      return (new User.fromJson(response.data));
+    }
+    else {
+      return throw Exception();
+    }
+
+  }
 }
