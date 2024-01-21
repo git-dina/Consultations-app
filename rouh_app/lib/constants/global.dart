@@ -1,5 +1,5 @@
 // API
-const String baseUrl = 'https://oras.orasweb.com/project/api/';
+const String baseUrl = 'https://oras.orasweb.com/api/';
 
 // Twilio
 const String accountSid = 'ACd0dac3942d72e08c1b0a4e1eceae8d4f'; // replace it with your account SID
