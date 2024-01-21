@@ -78,7 +78,7 @@ class User {
 
   }
 
-  Future<User?> getClient({
+  Future<User?> getUser({
     required String mobile,
   }) async {
     var data = json.encode({
